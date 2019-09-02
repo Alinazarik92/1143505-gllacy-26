@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алина Зарипова](https://up.htmlacademy.ru/htmlcss/26/user/1143505).
-* Наставник: `Неизвестно`.
+* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
