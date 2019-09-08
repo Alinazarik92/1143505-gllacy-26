@@ -7,7 +7,7 @@
   <body>
    <div class="page-wrapper" style="width: 1200px; margin: 0 auto;">
      <header class="page-wrapper__page-header page-header">
-      <h1 class="page-header__title">Магазин мороженого GllacyShop</h1>
+      <h1 class="page-header__title"><span class="visually-hidden">Магазин мороженого GllacyShop</span></h1>
       <nav class="page-header__nav main-nav">
         <a class="main-nav__logo logo">
           <img src="https://via.placeholder.com/154x64" width="" height="" alt="Логотип магазина мороженого GllacyShop">
@@ -91,28 +91,44 @@
        <h2 class="catalog__title">Хиты продаж</h2>
        <ul class="catalog__list catalog-list">
          <li class="catalog__item catalog-item">
-           <img class="catalog-item__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-           <p class="catalog-item__price">310 <span>&#8381</span><span>/кг</span></p>
-           <p class="catalog-item__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-           <a class="catalog-item__button button button--catalog" href="#">Быстрый просмотр</a>
+           <div class="catalog-item__product-card product-card">
+             <a class="product-card__link" href="#">
+               <img class="product-card__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+               <p class="product-card__price">310 <span>&#8381</span><span>/кг</span></p>
+               <p class="product-card__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+             </a>
+             <a class="product-card__button button button--product-card" href="#">Быстрый просмотр</a>
+           </div>
          </li>
          <li class="catalog__item catalog-item">
-           <img class="catalog-item__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-           <p class="catalog-item__price">380 <span>&#8381</span><span>/кг</span></p>
-           <p class="catalog-item__text">Сливочно-кофейное с кусочками шоколада</p>
-           <a class="catalog-item__button button button--catalog" href="#">Быстрый просмотр</a>
+           <div class="catalog-item__product-card product-card">
+             <a class="product-card__link" href="#">
+               <img class="product-card__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+               <p class="product-card__price">380 <span>&#8381</span><span>/кг</span></p>
+               <p class="product-card__title">Сливочно-кофейное с кусочками шоколада</p>
+             </a>
+             <a class="product-card__button button button--product-card" href="#">Быстрый просмотр</a>
+           </div>
          </li>
          <li class="catalog__item catalog-item">
-           <img class="catalog-item__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-           <p class="catalog-item__price">355 <span>&#8381</span><span>/кг</span></p>
-           <p class="catalog-item__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
-           <a class="catalog-item__button button button--catalog" href="#">Быстрый просмотр</a>
+           <div class="catalog-item__product-card product-card">
+             <a class="product-card__link" href="#">
+               <img class="product-card__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+               <p class="product-card__price">355 <span>&#8381</span><span>/кг</span></p>
+               <p class="product-card__title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+             </a>
+             <a class="product-card__button button button--product-card" href="#">Быстрый просмотр</a>
+           </div>
          </li>
          <li class="catalog__item catalog-item">
-           <img class="catalog-item__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-           <p class="catalog-item__price">415 <span>&#8381</span><span>/кг</span></p>
-           <p class="catalog-item__text">Сливочное крем-брюле с карамельной подливкой</p>
-           <a class="catalog-item__button button button--catalog" href="#">Быстрый просмотр</a>
+           <div class="catalog-item__product-card product-card">
+             <a class="product-card__link" href="#">
+               <img class="product-card__img" src="https://via.placeholder.com/267x267" width="" height="" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+               <p class="product-card__price">415 <span>&#8381</span><span>/кг</span></p>
+               <p class="product-card__title">Сливочное крем-брюле с карамельной подливкой</p>
+             </a>
+             <a class="product-card__button button button--product-card" href="#">Быстрый просмотр</a>
+           </div>
          </li>
        </ul>
      </section>
@@ -126,7 +142,7 @@
              <p class="about-us-item__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки из натурального, экологически чистого сырья.</p>
            </li>
            <li class="about-us__item about-us-item about-us-item--vendors">
-             <p class="about-us-item__text">Закупка производитсятолько у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+             <p class="about-us-item__text">Закупка производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
            </li>
            <li class="about-us__item about-us-item about-us-item--delivery">
              <p class="about-us-item__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -160,23 +176,27 @@
        <a class="contacts__button button button--contacts" href="#">Форма обратной связи</a>
      </section>
    </main>
-   <footer class="footer">
-     <ul class="footer__social footer-social">
+   <div class="page-wrapper" style="width: 1200px; margin-top: auto;">
+     <footer class="footer">
+       <ul class="footer__social footer-social">
          <li class="footer-social__twitter"><a href="">Твиттер</a> </li>
          <li class="footer-social__instagram"><a href="">Инстаграмм</a> </li>
          <li class="footer-social__facebook"><a href="">Фейсбук</a> </li>
          <li class="footer-social__vk"><a href="">ВКонтакте</a> </li>
-     </ul>
-     <ul class="footer__info footer-info">
-       <li class="footer-info__item footer-info__item--favourite"><a href="">Для поставщиков</a></li>
-       <li class="footer-info__item><a href="#">О производстве</a></li>
-       <li class="footer-info__item><a href="#">Наши документы</a></li>
-       <li class="footer-info__item><a href="#">Экологические стандарты</a></li>
-     </ul>
-     <p class="footer__academy academy">
-       Сделано в <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2019
-     </p>
-   </footer>
+       </ul>
+       <ul class="footer__info footer-info">
+         <li class="footer-info__item footer-info__item--favourite"><a href="#">Для поставщиков</a></li>
+         <li class="footer-info__item><a href="#">О производстве</a></li>
+         <li class="footer-info__item><a href="#">Наши документы</a></li>
+         <li class="footer-info__item><a href="#">Экологические стандарты</a></li>
+       </ul>
+       <div class="footer__academy academy">
+         Сделано в <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2019
+       </div>
+     </footer>
+   </div>
+
+
 <!-- Не знаю как классы написать-->
    <section class="button__form form form--contacts">
      <h2 class="form__title">Мы обязательно вам ответим!</h2>
