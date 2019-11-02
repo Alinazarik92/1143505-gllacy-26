@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -6,9 +5,9 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="slide-1">
     <div class="page-wrapper">
       <div class="content-container">
         <header class="page-header">
@@ -89,7 +88,7 @@
                         <circle cx="6.984" cy="18" r="2"/>
                         <circle cx="15.984" cy="18" r="2"/>
                       </g>
-                      <path fill="" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+                      <path fill="rgba(255,255,255,0.2)" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
                     </svg>
                     <span>Пусто</span>
                   </a>
@@ -109,26 +108,26 @@
           <section class="slider">
             <h2 class="visually-hidden">Выгодные предложения</h2>
             <ul class="slider__list">
-              <li class="slider__item slider-1 slider__item--active">
+              <li class="slider__item slider__item--1">
                 <img class="slider__img" src="img/slider-creme-raspberry.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
                 <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
-              <li class="slider__item slider-2">
+              <li class="slider__item slider__item--2">
                 <img class="slider__img" src="img/slider-choco-lemon.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
                 <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
-              <li class="slider__item slider-3">
+              <li class="slider__item slider__item--3">
                 <img class="slider__img" src="img/slider-fudge-strawberry.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
                 <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
             </ul>
             <div class="slider__toggle-container">
-              <button class="slider__toggle toggle-1" type="button"></button>
-              <button class="slider__toggle toggle-2" type="button"></button>
-              <button class="slider__toggle toggle-3" type="button"></button>
+              <button class="slider__toggle slider__toggle--1" type="button" data-number="1"></button>
+              <button class="slider__toggle slider__toggle--2" type="button" data-number="2"></button>
+              <button class="slider__toggle slider__toggle--3" type="button" data-number="3"></button>
             </div>
           </section>
           <section class="share">
@@ -144,51 +143,53 @@
               <a class="button button--share" href="#nowhere">Хочу шоколадки!</a>
             </div>
           </section>
-          <section class="popular">
-            <h2 class="visually-hidden">Хиты продаж</h2>
-            <ul class="popular__list">
-              <li class="popular__item">
-                <div class="product-card product-card--popular" tabindex="0">
-                  <a class="product-card__link" href="#nowhere">
-                    <img class="product-card__img" src="img/product-card-orange.png" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                    <p class="product-card__price">310&#x20bd;<span>/кг</span></p>
-                    <h3 class="product-card__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                  </a>
-                  <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
-                </div>
-              </li>
-              <li class="popular__item">
-                <div class="product-card product-card--popular" tabindex="0">
-                  <a class="product-card__link" href="#nowhere">
-                    <img class="product-card__img" src="img/product-card-coffee.png" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                    <p class="product-card__price">380&#x20bd;<span>/кг</span></p>
-                    <h3 class="product-card__title">Сливочно-кофейное с кусочками шоколада</h3>
-                  </a>
-                  <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
-                </div>
-              </li>
-              <li class="popular__item">
-                <div class="product-card product-card--popular" tabindex="0">
-                  <a class="product-card__link" href="#nowhere">
-                    <img class="product-card__img" src="img/product-card-strawberry.png" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                    <p class="product-card__price">355&#x20bd;<span>/кг</span></p>
-                    <h3 class="product-card__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                  </a>
-                  <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
-                </div>
-              </li>
-              <li class="popular__item">
-                <div class="product-card product-card--popular" tabindex="0">
-                  <a class="product-card__link" href="#nowhere">
-                    <img class="product-card__img" src="img/product-card-caramel.png" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-                    <p class="product-card__price">415&#x20bd;<span>/кг</span></p>
-                    <h3 class="product-card__title">Сливочное крем-брюле с карамельной подливкой</h3>
-                  </a>
-                  <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
-                </div>
-              </li>
-            </ul>
-          </section>
+        </div>
+        <section class="popular">
+          <h2 class="visually-hidden">Хиты продаж</h2>
+          <ul class="popular__list">
+            <li class="popular__item">
+              <div class="product-card product-card--popular" tabindex="0">
+                <a class="product-card__link" href="#nowhere">
+                  <img class="product-card__img" src="img/product-card-orange.png" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+                  <p class="product-card__price">310&#x20bd;<span>/кг</span></p>
+                  <h3 class="product-card__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                </a>
+                <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="product-card product-card--popular" tabindex="0">
+                <a class="product-card__link" href="#nowhere">
+                  <img class="product-card__img" src="img/product-card-coffee.png" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+                  <p class="product-card__price">380&#x20bd;<span>/кг</span></p>
+                  <h3 class="product-card__title">Сливочно-кофейное с кусочками шоколада</h3>
+                </a>
+                <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="product-card product-card--popular" tabindex="0">
+                <a class="product-card__link" href="#nowhere">
+                  <img class="product-card__img" src="img/product-card-strawberry.png" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                  <p class="product-card__price">355&#x20bd;<span>/кг</span></p>
+                  <h3 class="product-card__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                </a>
+                <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="product-card product-card--popular" tabindex="0">
+                <a class="product-card__link" href="#nowhere">
+                  <img class="product-card__img" src="img/product-card-caramel.png" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+                  <p class="product-card__price">415&#x20bd;<span>/кг</span></p>
+                  <h3 class="product-card__title">Сливочное крем-брюле с карамельной подливкой</h3>
+                </a>
+                <a class="button button--product-card" href="#nowhere">Быстрый просмотр</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="content-container content-container--main">
           <section class="about-us">
             <h2 class="about-us__title">Магазин Глэйси &mdash; это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="about-us__list">
@@ -227,7 +228,7 @@
         <section class="map-and-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <div class="map">
-            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6ada831e199eaba25f900a9fff6593d28d4bc1b69c84d6c73b7f2b6ba753e1c&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab6ada831e199eaba25f900a9fff6593d28d4bc1b69c84d6c73b7f2b6ba753e1c&amp;source=constructor" width="1200" height="430"></iframe>
             <div class="contacts">
               <p class="contacts__address">
                 Адрес главного офиса
@@ -249,14 +250,14 @@
         <footer class="page-footer">
           <ul class="social">
             <li class="social__item">
-              <a href="#nowhere" aria-label="Мы в Твиттере">
+              <a class="social__link" href="#nowhere" aria-label="Мы в Твиттере">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#nowhere" aria-label="Мы в Инстаграмме">
+              <a class="social__link" href="#nowhere" aria-label="Мы в Инстаграмме">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <g fill="#FFF">
                     <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
@@ -267,14 +268,14 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="#nowhere" aria-label="Мы на Фейсбуке">
+              <a class="social__link" href="#nowhere" aria-label="Мы на Фейсбуке">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#nowhere" aria-label="Мы во ВКонтакте">
+              <a class="social__link" href="#nowhere" aria-label="Мы во ВКонтакте">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <g fill="#FFF">
                     <path d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z"/>
@@ -286,36 +287,34 @@
           </ul>
           <ul class="footer-nav">
             <li class="footer-nav__item footer-nav__item--favourite"><a href="#nowhere">Для поставщиков</a></li>
-            <li class="footer-nav__item"><a href="#nowhere">О производстве</a></li>
             <li class="footer-nav__item"><a href="#nowhere">Наши документы</a></li>
+            <li class="footer-nav__item footer-nav__item--second"><a href="#nowhere">О производстве</a></li>
             <li class="footer-nav__item"><a href="#nowhere">Экологические стандарты</a></li>
           </ul>
           <div class="copyright">
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="108" height="39" viewBox="0 0 108.08 36.85">
-              <title>logo-htmlacademy-small1</title>
-              <path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)" fill="#fff"/>
-            </svg>
-            Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
+            <p class="copyright__link">
+              Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
+            </p>
           </div>
         </footer>
       </div>
-      <div class="feedback-form-container">
-        <section class="feedback-form" id="#form">
-          <h2 class="feedback-form__title">Мы обязательно вам ответим!</h2>
-          <button class="button--feedback-close" type="button" aria-label="Закрыть"></button>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="name">Имя Фамилия</label>
-            <input class="feedback-form__field" id="name" name="name" type="text" placeholder="Имя Фамилия" required>
-            <label class="visually-hidden" for="email-3">E-mail</label>
-            <input class="feedback-form__field" id="email-3" type="email" placeholder="email@example.com" required>
-            <label class="visually-hidden" for="comment">Ваш комментарий</label>
-            <textarea class="feedback-form__comment" id="comment" name="comment" placeholder="В свободной форме" required></textarea>
-            <button class="button button--feedback-form" type="submit">Отправить</button>
-          </form>
-        </section>
+      <div class="overlay">
       </div>
+      <section class="feedback-form" id="#form">
+        <h2 class="feedback-form__title">Мы обязательно вам ответим!</h2>
+        <button class="button--feedback-close" type="button" aria-label="Закрыть"></button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="name">Имя Фамилия</label>
+          <input class="feedback-form__field" id="name" name="name" type="text" placeholder="Имя Фамилия" required>
+          <label class="visually-hidden" for="email-3">E-mail</label>
+          <input class="feedback-form__field" id="email-3" type="email" placeholder="email@example.com" required>
+          <label class="visually-hidden" for="comment">Ваш комментарий</label>
+          <textarea class="feedback-form__comment" id="comment" name="comment" placeholder="В свободной форме" required></textarea>
+          <button class="button button--feedback-form" type="submit">Отправить</button>
+        </form>
+      </section>
     </div>
-    <script src="js/slider.js"></script>
-    <script src="js/feedback-form.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
