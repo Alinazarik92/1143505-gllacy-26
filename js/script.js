@@ -8,8 +8,8 @@
   var name = popup.querySelector ("input[type=text]");
   var email = popup.querySelector("input[type=email]");
   var text = popup.querySelector("textarea");
-  
-  
+
+
   var onEscPress = function(evt) {
     if (evt.keyCode === 27) {
       onClosePopup(evt);

@@ -52,7 +52,6 @@
                     </svg>
                   </a>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="visually-hidden" for="search">Поиск</label>
                     <input class="search-form__field" id="search" name="search" type="search" placeholder="Крем-брюле">
                   </form>
                 </li>
@@ -67,9 +66,7 @@
                     Вход
                   </a>
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="visually-hidden" for="email-2">E-mail</label>
                     <input class="login-form__field" id="email-2" name="email" type="email" placeholder="email@example.com" required>
-                    <label class="visually-hidden" for="password">Пароль</label>
                     <input class="login-form__field" id="password" name="password" type="password" placeholder="••••••••" required>
                     <div class="login-form__bottom-container">
                       <button class="button button--login-form" type="submit">Войти</button>
@@ -90,7 +87,7 @@
                       </g>
                       <path fill="rgba(255,255,255,0.2)" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
                     </svg>
-                    <span>Пусто</span>
+                    Пусто
                   </a>
                 </li>
               </ul>
@@ -114,12 +111,12 @@
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
               <li class="slider__item slider__item--2">
-                <img class="slider__img" src="img/slider-choco-lemon.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+                <img class="slider__img" src="img/slider-choco-lemon.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
                 <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
               <li class="slider__item slider__item--3">
-                <img class="slider__img" src="img/slider-fudge-strawberry.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+                <img class="slider__img" src="img/slider-fudge-strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
                 <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
                 <a class="button button--slider" href="#nowhere">Давайте оба!</a>
               </li>
@@ -197,8 +194,7 @@
                 <p class="about-us__text about-us__text--production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="about-us__item">
-                <p class="about-us__text about-us__text--vendors">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                </p>
+                <p class="about-us__text about-us__text--vendors">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="about-us__item">
                 <p class="about-us__text about-us__text--ingredients">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -216,7 +212,6 @@
             <div class="subscription-container">
               <form class="subscription" action="https://echo.htmlacademy.ru" method="get">
                 <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <label class="visually-hidden" for="email">E-mail</label>
                 <div class="subscription__bottom-container">
                   <input class="subscription__field" id="email" type="email" name="email" placeholder="email@example.com" required>
                   <button class="button button--subscription" type="submit">Отправить</button>
@@ -292,7 +287,9 @@
             <li class="footer-nav__item"><a href="#nowhere">Экологические стандарты</a></li>
           </ul>
           <div class="copyright">
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="39">
+            </a>
             <p class="copyright__link">
               Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
             </p>
@@ -305,10 +302,8 @@
         <h2 class="feedback-form__title">Мы обязательно вам ответим!</h2>
         <button class="button--feedback-close" type="button" aria-label="Закрыть"></button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="name">Имя Фамилия</label>
           <input class="feedback-form__field" id="name" name="name" type="text" placeholder="Имя Фамилия" required>
-          <label class="visually-hidden" for="email-3">E-mail</label>
-          <input class="feedback-form__field" id="email-3" type="email" placeholder="email@example.com" required>
+          <input class="feedback-form__field" id="email-3" type="email"  name="email-3" placeholder="email@example.com" required>
           <label class="visually-hidden" for="comment">Ваш комментарий</label>
           <textarea class="feedback-form__comment" id="comment" name="comment" placeholder="В свободной форме" required></textarea>
           <button class="button button--feedback-form" type="submit">Отправить</button>
